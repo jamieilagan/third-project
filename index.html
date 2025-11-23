@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eskinita Art Farm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Anta' rel='stylesheet'>
+
+    <style>
+        .carousel {
+            max-height: 600px;
+            overflow: hidden;
+        }
+
+        .carousel-inner {
+            max-height: 600px;
+            width: 100%;
+        }
+
+        .carousel-item img {
+            height: 600px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .landing-container {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/images/landing.jpg);
+            min-height: 380px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .exhibit-container {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/images/exhibitHeader.png);
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-container {
+            display: block;
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-dark d-flex justify-content-center" id="Home">
+        <img src="assets/images/logo.png" alt="Eskinita Art Farm Logo" width="218" height="74">
+    </div>
+    <div class="container-fluid bg-dark text-light px-4 py-3 position-sticky top-0 z-1">
+        <div class="row" style="font-family: 'Anta', sans-serif;">
+            <div class="col justify-content-center d-flex gap-5">
+                <a href="#Home" class="nav-link">Home</a>
+                <a href="#About" class="nav-link">About</a>
+                <a href="#Exhibit" class="nav-link">Exhibit</a>
+                <a href="#Contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="landing-container"></div>
+
+    <div class="container my-2 px-5 py-3" id="About">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-4 col-md-2 d-flex">
+                <h4 style="font-family: 'Anta', sans-serif;">Eskinita Art Farm</h4>
+            </div>
+            <div class="col-8 border-start border-2 border-dark ps-3">
+                <p class="lead">Is an artist-run project which aims to bring art and culture to the
+                    public through gallery exhibitions and community art projects.<br>
+                    It has 5 galleries located within a private residential and farm property in barangay Janopol in
+                    Tanauan, Batangas. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bg-dark text-light my-3 p-5">
+        <div class="row justify-content-start align-items-center">
+            <div class="col">
+                <h4 style="font-family: 'Anta', sans-serif;">Eskinita</h4>
+                <h5>noun</h5>
+                <div class="paragraph">Esquinita, from the Spanish word esquina, means “corner” leading to an alleyway.
+                    Cities in Metro Manila have networks of side streets and alleyways—eskinitas—familiar streets that
+                    take one home, or to yet to be discovered shorter routes to a new adventure, pre-determined
+                    destination or a life changing destiny.
+                    Eskinita Art Gallery's name is play on founder Alfredo Esquillo's nickname—“Eski.” The Gallery is an
+                    “alleyway” to his new home for art and artists, and an invitation to share in his new adventures.
+                    As he established his brand of magic cum “social realist” style, his canvases became necessary
+                    fixtures in exhibitions that defined junctures in contemporary Philippine Art.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="exhibit-container p-4 text-light" style="position: relative;" id="Exhibit">
+        <div class="row align-items-bottom" style="position: absolute; bottom: 30px; left: 40px;">
+            <div class="col-justify-content-start border-start border-3 border-light">
+                <h2 style="font-family: 'Anta', sans-serif;">Exhibits 2025</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bg-dark text-light my-3 p-4">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-6 col-md-4 text-left" style="font-family: 'Anta', sans-serif;">
+                <h4>Bayluhanay Biennale 2025:
+                    <br>Sikulo at Sikleta
+                </h4>
+                <h5>September 19 to October 19, 2025 (Luzon)</h5>
+            </div>
+            <div class="col-6 col-md-4 text-end">
+                <img src="assets/images/exhibit.jpg" alt="Exhibit Image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-4">
+        <div class="paragraph text-center">Bayluhanay Biennale 2025's theme, Sikulo at Sikleta (Cycle and Cycling),
+            calls for
+            attentiveness to the cyclical movements of nature and the recurring impacts of human activity and
+            market-driven technologies on our fragile environment. It is both a reminder of continuity and a warning of
+            consequence.<br>
+            <br>As a form of response, Sikulo at Sikleta gathers artists from Luzon, Visayas, and Mindanao who share a
+            deep
+            concern for the fate of our planet and a belief in the transformative benefits of cycling. Together, as a
+            collective on wheels, they embody art as activism; bringing urgent issues of climate change, ecological
+            imbalance, and environmental degradation into the public sphere. The artworks, worn by artist-cyclists as
+            they ride, are not confined to walls but carried through streets. In this way, art and life merge as
+            intervention, serving as invitation for dialogue and solidarity in the struggle for a sustainable
+            future.<br>
+            <br><strong>- Janine Dimaranan</strong>
+        </div>
+    </div>
+
+    <!-- <div class="container-fluid my-3">
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="assets/images/1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="assets/images/2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="card-container m-3 p-5">
+        <div class="row mb-4">
+            <div class="col border-start border-3 border-dark ps-3">
+                <h3 style="font-family: 'Anta', sans-serif;">Artworks</h4>
+            </div>
+        </div>
+        <div class="row" id="contents">
+        </div>
+    </div>
+
+    <footer class="footer bg-dark text-light pt-4 mt-3" id="Contact">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center g-4">
+                <div class="col-6 col-md-4 text-center">
+                    <div class="mb-3">
+                        <h5 style="font-family: 'Anta', sans-serif;">Eskinita Art Farm</h5>
+                    </div>
+                    <div class="mb-3">
+                        <h6>Tuesday-Sunday</h6>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.facebook.com/eskinitaartgallery/" target="_blank"><img
+                                src="assets/images/fb.png" alt="Facebook" style="width: 42px; height: 42px;"></a>
+                        <a href="https://www.instagram.com/eskinitaartgallery/" target="_blank"><img
+                                src="assets/images/ig.png" alt="Instagram" style="width: 42px; height: 42px;"></a>
+                    </div>
+                    <div>
+                        <h6>353, 355 Purok 5, Janopol Occidental,<br>Tanauan, Batangas</h6>
+                    </div>
+                </div>
+
+                <!-- Right column: map -->
+                <div class="col-6 col-md-4">
+                    <div class="ratio ratio-4x3">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.9512422096077!2d121.08121359999998!3d14.080055599999989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd6f765435b491%3A0xa9bc30e95e00669d!2sEskinita%20Art%20Farm!5e0!3m2!1sen!2sph!4v1763877167744!5m2!1sen!2sph"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Credit row -->
+            <div class="row pt-2">
+                <div class="col-12">
+                    <p class="text-center mb-3">All Credit Goes to <a href="https://www.eskinitaartgallery.com/"
+                            class="text-light">Eskinita Art Gallery</a>.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var containerRow = document.getElementById("contents");
+
+        var artworks = [
+            {
+                title: "Pilipinas Not for Sale",
+                artist: "Aba Dalena",
+                description: "Poster Print on Wood Panel",
+                image: "assets/images/A1.jpg"
+            },
+            {
+                title: "A Never-Ending Imprisoned Childhood",
+                artist: "Argee Dacuyan",
+                description: "Acrylic, Oil, and Wood on Torn Canvas Mounted on Wood Panel",
+                image: "assets/images/A2.jpg"
+            },
+            {
+                title: "Robber Cut",
+                artist: "Bryan Barrios",
+                description: "Acrylic, Spray Paint, Offset Ink on Canvas",
+                image: "assets/images/A3.jpg"
+            },
+            {
+                title: "The Pig",
+                artist: "Carlo De Laza",
+                description: "Acrylic on Canvas",
+                image: "assets/images/A4.jpg"
+            },
+            {
+                title: "Velocity",
+                artist: "CJ Tañedo",
+                description: "Oil and Acrylic on Wood Panel",
+                image: "assets/images/A5.jpg"
+            },
+            {
+                title: "Sa Magkabilang Dako",
+                artist: "John Paul Antido",
+                description: "Acrylic on Wood Panel",
+                image: "assets/images/A6.jpg"
+            },
+            {
+                title: "Lakbay-Buhayt",
+                artist: "Jonathan Joven",
+                description: "Graphite and Acrylic on Repurposed Tracing Paper on Wood Panel",
+                image: "assets/images/A7.jpg"
+            },
+            {
+                title: "Pedal Power and other Related Matters",
+                artist: "Katti Sta Ana",
+                description: "Acrylic and Ink on Wood Panel",
+                image: "assets/images/A8.jpg"
+            },
+            {
+                title: "Ups and Downs",
+                artist: "Kendall Collindon",
+                description: "Acrylic on Wood Panel",
+                image: "assets/images/A9.jpg"
+            },
+            {
+                title: "Cost and Effect",
+                artist: "KR Rodgers",
+                description: "Acrylic on Canvas",
+                image: "assets/images/A10.jpg"
+            },
+            {
+                title: "Sigad",
+                artist: "Lorebert Mralita",
+                description: "Acrylic and Oil on Canvas",
+                image: "assets/images/A11.jpg"
+            },
+            {
+                title: "Arangkada I and II",
+                artist: "Pedro Felix Garcia",
+                description: "Oil on Canvas",
+                image: "assets/images/A12.jpg"
+            },
+            {
+                title: "Two Sides of Insanity",
+                artist: "Rai Cruz",
+                description: "Acrylic on Wood Panel",
+                image: "assets/images/A13.jpg"
+            },
+            {
+                title: "Politiko-Payaso",
+                artist: "Reynold Dela Cruz",
+                description: "Acrylic, Spray Paint, Offset Ink on Canvas",
+                image: "assets/images/A14.jpg"
+            },
+            {
+                title: "Lubog",
+                artist: "Rey Bollozos",
+                description: "Ink, Oil, Joomchi on Wood Panel",
+                image: "assets/images/A15.jpg"
+            }
+        ]
+
+        for (var i = 0; i < artworks.length; i++) {
+            containerRow.innerHTML += `
+            <div class="col-12 col-md-4 my-4">
+                <div class="card w-100">
+                    <img src="`+ artworks[i].image + `" alt="` + artworks[i].title + `">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">`+ artworks[i].title + `</h5>
+                        <h6 class="card-subtitle text-muted">- `+ artworks[i].artist + ` -</h6>
+                        <p class="card-text">`+ artworks[i].description + `</p>
+                    </div>
+                </div>
+            </div>
+            `;
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
