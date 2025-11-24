@@ -1,0 +1,51 @@
+.carousel {
+    overflow: hidden;
+}
+
+.carousel-inner {
+    width: 100%;
+}
+
+.carousel-item img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.landing-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.landing-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.exhibit-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/images/exhibitHeader.png);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-container {
+    display: block;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+
+}

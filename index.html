@@ -8,58 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Anta' rel='stylesheet'>
-
-    <style>
-        .carousel {
-            max-height: 600px;
-            overflow: hidden;
-        }
-
-        .carousel-inner {
-            max-height: 600px;
-            width: 100%;
-        }
-
-        .carousel-item img {
-            height: 600px;
-            object-fit: cover;
-            object-position: center;
-        }
-
-        .landing-container {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/images/landing.jpg);
-            min-height: 380px;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-
-        .exhibit-container {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/images/exhibitHeader.png);
-            height: 400px;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .card-container {
-            display: block;
-        }
-
-        .card {
-            width: 100%;
-            height: 100%;
-            box-sizing: border-box;
-
-        }
-
-        .card img {
-            width: 100%;
-            height: auto;
-            display: block;
-            object-fit: cover;
-
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -77,9 +26,11 @@
         </div>
     </div>
 
-    <div class="landing-container"></div>
+    <div class="landing-container">
+        <img src="assets/images/landing.jpg" alt="Landing" class="landing-img">
+    </div>
 
-    <div class="container my-2 px-5 py-3" id="About">
+    <div class="container my-3 px-5 py-3" id="About">
         <div class="row justify-content-center align-items-center">
             <div class="col-4 col-md-2 d-flex">
                 <h4 style="font-family: 'Anta', sans-serif;">Eskinita Art Farm</h4>
@@ -114,7 +65,7 @@
     <div class="exhibit-container p-4 text-light" style="position: relative;" id="Exhibit">
         <div class="row align-items-bottom" style="position: absolute; bottom: 30px; left: 40px;">
             <div class="col-justify-content-start border-start border-3 border-light">
-                <h2 style="font-family: 'Anta', sans-serif;">Exhibits 2025</h4>
+                <h2 style="font-family: 'Anta', sans-serif;">Recent Exhibit</h2>
             </div>
         </div>
     </div>
@@ -122,9 +73,9 @@
     <div class="container bg-dark text-light my-3 p-4">
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-6 col-md-4 text-left" style="font-family: 'Anta', sans-serif;">
-                <h4>Bayluhanay Biennale 2025:
+                <h3>Bayluhanay Biennale 2025:
                     <br>Sikulo at Sikleta
-                </h4>
+                </h3>
                 <h5>September 19 to October 19, 2025 (Luzon)</h5>
             </div>
             <div class="col-6 col-md-4 text-end">
@@ -151,7 +102,7 @@
         </div>
     </div>
 
-    <!-- <div class="container-fluid my-3">
+    <div class="container my-3">
         <div class="row">
             <div class="col-12">
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -182,7 +133,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <div class="card-container m-3 p-5">
         <div class="row mb-4">
@@ -236,106 +187,18 @@
         </div>
     </footer>
 
-    <script>
-        var containerRow = document.getElementById("contents");
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="assets/data.js"></script>
 
-        var artworks = [
-            {
-                title: "Pilipinas Not for Sale",
-                artist: "Aba Dalena",
-                description: "Poster Print on Wood Panel",
-                image: "assets/images/A1.jpg"
-            },
-            {
-                title: "A Never-Ending Imprisoned Childhood",
-                artist: "Argee Dacuyan",
-                description: "Acrylic, Oil, and Wood on Torn Canvas Mounted on Wood Panel",
-                image: "assets/images/A2.jpg"
-            },
-            {
-                title: "Robber Cut",
-                artist: "Bryan Barrios",
-                description: "Acrylic, Spray Paint, Offset Ink on Canvas",
-                image: "assets/images/A3.jpg"
-            },
-            {
-                title: "The Pig",
-                artist: "Carlo De Laza",
-                description: "Acrylic on Canvas",
-                image: "assets/images/A4.jpg"
-            },
-            {
-                title: "Velocity",
-                artist: "CJ Tañedo",
-                description: "Oil and Acrylic on Wood Panel",
-                image: "assets/images/A5.jpg"
-            },
-            {
-                title: "Sa Magkabilang Dako",
-                artist: "John Paul Antido",
-                description: "Acrylic on Wood Panel",
-                image: "assets/images/A6.jpg"
-            },
-            {
-                title: "Lakbay-Buhayt",
-                artist: "Jonathan Joven",
-                description: "Graphite and Acrylic on Repurposed Tracing Paper on Wood Panel",
-                image: "assets/images/A7.jpg"
-            },
-            {
-                title: "Pedal Power and other Related Matters",
-                artist: "Katti Sta Ana",
-                description: "Acrylic and Ink on Wood Panel",
-                image: "assets/images/A8.jpg"
-            },
-            {
-                title: "Ups and Downs",
-                artist: "Kendall Collindon",
-                description: "Acrylic on Wood Panel",
-                image: "assets/images/A9.jpg"
-            },
-            {
-                title: "Cost and Effect",
-                artist: "KR Rodgers",
-                description: "Acrylic on Canvas",
-                image: "assets/images/A10.jpg"
-            },
-            {
-                title: "Sigad",
-                artist: "Lorebert Mralita",
-                description: "Acrylic and Oil on Canvas",
-                image: "assets/images/A11.jpg"
-            },
-            {
-                title: "Arangkada I and II",
-                artist: "Pedro Felix Garcia",
-                description: "Oil on Canvas",
-                image: "assets/images/A12.jpg"
-            },
-            {
-                title: "Two Sides of Insanity",
-                artist: "Rai Cruz",
-                description: "Acrylic on Wood Panel",
-                image: "assets/images/A13.jpg"
-            },
-            {
-                title: "Politiko-Payaso",
-                artist: "Reynold Dela Cruz",
-                description: "Acrylic, Spray Paint, Offset Ink on Canvas",
-                image: "assets/images/A14.jpg"
-            },
-            {
-                title: "Lubog",
-                artist: "Rey Bollozos",
-                description: "Ink, Oil, Joomchi on Wood Panel",
-                image: "assets/images/A15.jpg"
-            }
-        ]
+    <script>
+        var contents = document.getElementById("contents");
 
         for (var i = 0; i < artworks.length; i++) {
-            containerRow.innerHTML += `
-            <div class="col-12 col-md-4 my-4">
-                <div class="card w-100">
+            contents.innerHTML += `
+            <div class="col-12 col-sm-4 my-4">
+                <div class="card shadow w-100">
                     <img src="`+ artworks[i].image + `" alt="` + artworks[i].title + `">
                     <div class="card-body text-center">
                         <h5 class="card-title">`+ artworks[i].title + `</h5>
@@ -348,9 +211,6 @@
         }
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
