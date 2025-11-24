@@ -30,9 +30,9 @@
         <img src="assets/images/landing.jpg" alt="Landing" class="landing-img">
     </div>
 
-    <div class="container my-3 px-5 py-3" id="About">
+    <div class="container my-3 px-4 py-3" id="About">
         <div class="row justify-content-center align-items-center">
-            <div class="col-4 col-md-2 d-flex">
+            <div class="col-4 col-md-2">
                 <h4 style="font-family: 'Anta', sans-serif;">Eskinita Art Farm</h4>
             </div>
             <div class="col-8 border-start border-2 border-dark ps-3">
@@ -135,14 +135,14 @@
         </div>
     </div>
 
-    <div class="card-container m-3 p-5">
+    <div class="card-container container my-3">
         <div class="row mb-4">
-            <div class="col border-start border-3 border-dark ps-3">
-                <h3 style="font-family: 'Anta', sans-serif;">Artworks</h4>
+            <div class="col-10 mx-3 border-start border-3 border-dark">
+                <h3 style="font-family: 'Anta', sans-serif;">Artworks</h3>
             </div>
         </div>
-        <div class="row" id="contents">
-        </div>
+            <div class="row g-2" id="contents">
+            </div>
     </div>
 
     <footer class="footer bg-dark text-light pt-4 mt-3" id="Contact">
@@ -197,12 +197,12 @@
 
         for (var i = 0; i < artworks.length; i++) {
             contents.innerHTML += `
-            <div class="col-12 col-sm-4 my-4">
-                <div class="card shadow w-100">
+            <div class="col-6 col-md-4">
+                <div class="card shadow h-100">
                     <img src="`+ artworks[i].image + `" alt="` + artworks[i].title + `">
                     <div class="card-body text-center">
                         <h5 class="card-title">`+ artworks[i].title + `</h5>
-                        <h6 class="card-subtitle text-muted">- `+ artworks[i].artist + ` -</h6>
+                        <h6 class="card-subtitle text-muted">- `+ artworks[i].artist +`-</h6>
                         <p class="card-text">`+ artworks[i].description + `</p>
                     </div>
                 </div>

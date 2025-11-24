@@ -36,9 +36,9 @@ var artworks = [
         image: "assets/images/A6.jpg"
     },
     {
-        title: "Lakbay-Buhayt",
+        title: "Lakbay-Buhay",
         artist: "Jonathan Joven",
-        description: "Graphite and Acrylic on Repurposed Tracing Paper on Wood Panel",
+        description: "Graphite and Acrylic on Repurposed Tracing Paper",
         image: "assets/images/A7.jpg"
     },
     {
