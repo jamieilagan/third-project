@@ -6,7 +6,7 @@ var exhibits = [
     },
     {
         image: "assets/images/hisoka.jpg",
-        title: "Akosi Hisoka",
+        title: "AkosiHisoka",
         link: "https://www.eskinitaartgallery.com/akosihisoka"
     },
     {
