@@ -1,6 +1,6 @@
 var artworks = [
     {
-        title: "Pilipinas Not for Sale",
+        title: "Pilipinas Not for Sale/Save Pakil, No to Dam Save Sierra Madre Mountains",
         artist: "Aba Dalena",
         description: "Poster Print on Wood Panel",
         image: "assets/images/A1.jpg"
@@ -38,7 +38,7 @@ var artworks = [
     {
         title: "Lakbay-Buhay",
         artist: "Jonathan Joven",
-        description: "Graphite and Acrylic on Repurposed Tracing Paper",
+        description: "Graphite and Acrylic on Repurposed Tracing Paper on Wood Panel",
         image: "assets/images/A7.jpg"
     },
     {
@@ -88,5 +88,11 @@ var artworks = [
         artist: "Rey Bollozos",
         description: "Ink, Oil, Joomchi on Wood Panel",
         image: "assets/images/A15.jpg"
+    },
+    {
+        title: "Consumption",
+        artist: "Jericho Vamenta",
+        description: "Oil pastel on Wood Panel",
+        image: "assets/images/A16.jpg"
     }
 ];
